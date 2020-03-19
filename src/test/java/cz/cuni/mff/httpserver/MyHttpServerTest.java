@@ -51,7 +51,7 @@ public class MyHttpServerTest {
         s.register(SystemsController.class);
         s.start();
 
-        when().get("http://localhost:6666/systems/version")
+        when().get("http://localhost:6666/system/version")
                 .then()
                 .body(equalTo(SystemsController.VERSION));
 

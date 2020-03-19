@@ -17,7 +17,7 @@ public class MyHttpServer {
     }
 
     public void register(final Class<?>... clazzez) {
-        server.createContext("/systems/version", exchange -> { // TODO: take path value from the @Path annotation
+        server.createContext("/system/version", exchange -> { // TODO: take path value from the @Path annotation
 
             byte[] response = "1.0".getBytes(); // TODO: the actual response need to be taken from the method invocation
 
